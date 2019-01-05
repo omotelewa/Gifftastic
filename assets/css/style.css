@@ -1,0 +1,34 @@
+body{
+  background-color:black; 
+}
+
+button, div, form, input{
+  margin: 10px;
+}
+
+button{
+  background-color: green;
+  border: 2px solid #000;
+  border-radius: 3px;
+  color: white;
+}
+
+P{
+  font-weight: bold;
+  font-size: 14px;
+  line-height: .5;
+}
+
+.container{
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.topicDiv{
+  float:left;
+}
+
+.GIF:hover{
+  cursor: -webkit-grab;
+}
