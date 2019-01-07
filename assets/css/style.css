@@ -20,9 +20,10 @@ P{
 }
 
 .container{
-  background-image: url(../images/background.jpg);
+  background-image: url(../images/The-Lawrenceville-School-bdK3ACE.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-position: center;
+  background-size: 100% 160%;
 }
 
 .topicDiv{

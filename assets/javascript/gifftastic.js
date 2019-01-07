@@ -7,8 +7,7 @@ showButtons();
 
 function exhibitShow() {
   var topic = $(this).attr("data-name");
-  const queryURL = `https://api.giphy.com/v1/gifs/search?q=${topic}&api_key=
-  RFkBkszWka5WEssztVqQhWAcSMPRznLb&limit=10&limit=10`;
+  const queryURL = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=RFkBkszWka5WEssztVqQhWAcSMPRznLb&limit=10&limit=10";
 
   $.ajax({
     url: queryURL,
@@ -42,20 +41,20 @@ function exhibitShow() {
       topicDiv.append(image2);
       viewDiv.append(topicDiv);
     }
-    $("#topics-view").append(viewDiv);
+    $("#topic-view").prepend(viewDiv);
     $(".activeGifs").hide();
   });
 }
 
 function showButtons() {
-  $("#button-view").empty();
+  $("#buttons-view").empty();
 
   for (let i = 0; i < topics.length; i++) {
     const btn = $("<button>", 
     {
       "class": "topic",
       "data-name": topics[i],
-      "value": topics[i]
+      "text": topics[i]
     });
 
     $("#buttons-view").append(btn);
@@ -74,15 +73,15 @@ $(document).on("click", ".topic", exhibitShow);
 
 
 $(document).on("click", ".stillGifs", function (event) {
-  stillId = `#${event.target.attribute.dataInfo.value}Still`;
-  activeId = `#${event.target.attribute.dataInfo.value}Active`;
+  stillId = `#${event.target.attributes.dataInfo.value}Still`;
+  activeId = `#${event.target.attributes.dataInfo.value}Active`;
   $(stillId).hide();
   $(activeId).show();
 });
 
 $(document).on("click", ".activeGifs", function (event) {
-  stillId = `#${event.target.attribute.dataInfo.value}Still`;
-  activeId = `#${event.target.attribute.dataInfo.value}Active`;
+  stillId = `#${event.target.attributes.dataInfo.value}Still`;
+  activeId = `#${event.target.attributes.dataInfo.value}Active`;
   $(stillId).show();
   $(activeId).hide();
 });
