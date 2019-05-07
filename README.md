@@ -9,11 +9,11 @@ To run the application locally, you will need to clone the repository to your lo
 
 HTTPS:
 
-$ git clone https://github.com/jckmrrssy/GifTastic.git
+$ git clone git@github.com:omotelewa/Gifftastic.git
 SSH:
 
-$ git clone git@github.com:jckmrrssy/GifTastic.git
-Then, open index.html in your browser to get the app started.
+$ git clone git@github.com:omotelewa/Gifftastic.git
+Then, open index.html in your browser to run the app started.
 
-Technologies Used
+Technologies used to create this App listed below:
 JavaScript, AJAX, Bootstrap, jQuery
